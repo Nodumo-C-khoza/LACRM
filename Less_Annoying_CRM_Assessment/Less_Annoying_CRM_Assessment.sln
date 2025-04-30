@@ -1,0 +1,32 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Less_Annoying_CRM_Assessment", "Less_Annoying_CRM_Assessment.csproj", "{AF9916B8-ED2F-45A3-99F8-EA4B271E6CBE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Less_Annoying_CRM_Assessment.Tests", "..\Less_Annoying_CRM_Assessment.Tests\Less_Annoying_CRM_Assessment.Tests.csproj", "{F4CD9A28-4DB2-4347-9689-3DF63659E8EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF9916B8-ED2F-45A3-99F8-EA4B271E6CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF9916B8-ED2F-45A3-99F8-EA4B271E6CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF9916B8-ED2F-45A3-99F8-EA4B271E6CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF9916B8-ED2F-45A3-99F8-EA4B271E6CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4CD9A28-4DB2-4347-9689-3DF63659E8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4CD9A28-4DB2-4347-9689-3DF63659E8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4CD9A28-4DB2-4347-9689-3DF63659E8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4CD9A28-4DB2-4347-9689-3DF63659E8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E828AFD-769C-4957-8E94-F1DBD00306E7}
+	EndGlobalSection
+EndGlobal
+

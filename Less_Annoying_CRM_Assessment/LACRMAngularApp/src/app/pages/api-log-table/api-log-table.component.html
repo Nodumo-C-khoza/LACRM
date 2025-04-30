@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+    <span>API Request Logs</span>
+  </mat-toolbar>
+
+  <div class="mat-elevation-z8">
+    <mat-form-field appearance="fill">
+      <mat-label>Filter</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Filter logs">
+    </mat-form-field>
+    <table mat-table [dataSource]="dataSource" matSort class="full-width-table">
+
+      <!-- Timestamp Column -->
+      <ng-container matColumnDef="timestamp">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Time</th>
+        <td mat-cell *matCellDef="let log">{{ log.Timestamp | date:'short' }}</td>
+      </ng-container>
+
+      <!-- Endpoint Column-->
+      <ng-container matColumnDef="endpoint">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Endpoint</th>
+        <td mat-cell *matCellDef="let log">{{ log.Endpoint }}</td>
+      </ng-container>
+
+      <!-- Status Code Column -->
+      <ng-container matColumnDef="statusCode">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
+        <td mat-cell *matCellDef="let log">{{ log.StatusCode }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 25]" showFirstLastButtons></mat-paginator>
+  </div>

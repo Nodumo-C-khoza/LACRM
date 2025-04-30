@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button aria-label="Menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <span class="app-title" routerLink="/" style="cursor: pointer;">Less Annoying CRM App</span>
+
+  <span class="spacer"></span>
+
+  <a mat-button routerLink="/logs" routerLinkActive="active-link">Logs</a>
+  &nbsp;
+
+  <button mat-icon-button aria-label="Favorites">
+    <mat-icon>favorite</mat-icon>
+  </button>
+
+  <button mat-icon-button aria-label="Share">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
